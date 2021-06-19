@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-100dp"
+        android:text="@string/heading"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/editText"
+        android:layout_alignStart="@id/editText"
+        android:layout_marginStart="-177dp"
+        android:text="@string/vel"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:hint="@string/velocity"
+        android:textSize="16sp"
+        android:textAlignment="textEnd"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="250dp"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/lf"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#4CAF50"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:id="@+id/answer"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:background="@color/purple_500"
+        android:insetLeft="6dp"
+        android:insetRight="6dp"
+        android:text="@string/answer"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

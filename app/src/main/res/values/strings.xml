@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lorentz calculator</string>
+    <string name="answer">CALCULATE</string>
+    <string name="vel">ENTER VELOCITY(m/s)</string>
+    <string name="heading">LORENTZ FACTOR CALCULATOR</string>
+    <string name="lf">LORENTZ FACTOR</string>
+    <string name="velocity">velocity</string>
+</resources>
