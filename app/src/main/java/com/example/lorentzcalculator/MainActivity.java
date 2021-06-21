@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText editText;
@@ -43,18 +44,17 @@ public class MainActivity extends AppCompatActivity {
                 if (editText.getText().toString().isEmpty())
                 {
                     inform.setText(new_val);
-
                 }
                 else
                 {
                     if (square_lf<0)
                     {
-                        inform.setText(toast);
+                        Toast.makeText(getApplicationContext(),toast,Toast.LENGTH_SHORT).show();
                     }
                     else
                     {
                         lf=Math.sqrt(square_lf);
-                        lorentz_factor=String.valueOf(lf);
+                        lorentz_factor=String.valueOf(1/lf);
                         res.setText(lorentz_factor);
                     }
                 }
